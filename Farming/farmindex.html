@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+  <title>Farming Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"/>
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <script scr="js\bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+/* Slider Starts */
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+/*Slider ends */
+
+</style>
+<body>
+	<!-- Header -->
+	<header>
+	<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top ">
+        <div class="navbar-header">
+          <a href="" class="navbar-brand">Logo</a>
+        </div>
+  			<form class="form-inline">
+    		<input class="form-control mr-sm-2" type="text" placeholder="Search">
+    		<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="glyphicon glyphicon-search"></span>   Search</button>
+  			</form>
+	</nav>
+    </div>
+
+      <div class="jumbotron">
+        <div class="container" style="margin:-5px padding:2px">
+          <h1 style="text">The Farming Company</h1>
+          <h3>Creating history since 2016...</h3>
+        </div> 
+      </div> 
+  </header>
+	<!-- Header ends -->
+	<!-- Slider Starts -->
+	<div id="slideshow">
+   <div>
+     <img src="image/image_1.jpg" style="height:200px;width:400px">
+   </div>
+   <div>
+     <img src="image/image_1.jpg" style="height:200px;width:400px">
+   </div>
+   <div>
+     Pretty cool eh? This slide is proof the content can be anything.
+   </div>
+</div>
+	<!-- Slider ends-->
+<script type="text/javascript">
+
+$("#slideshow > div:gt(0)").hide();
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+</html>
