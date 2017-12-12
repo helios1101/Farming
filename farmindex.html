@@ -14,6 +14,18 @@
 
 </head>
 <style>
+/* Nav bar effect starts */
+#global-nav{
+  height:60px;
+  width:100%; 
+}
+.scrolled-nav{
+  box-shadow:5px 5px 5px #888;
+  border-bottom:dotted; 
+  height:30px;
+  width:100%;
+}
+/* Nav bar effects ends */
 /* Slider Starts */
 #slideshow { 
     margin: 20px auto; 
@@ -32,6 +44,27 @@
     bottom: 10px; 
 }
 /*Slider ends */
+/* Scrollspy starts*/
+ul.nav-pills {
+      top: 100px;
+      position: relative;
+  }
+  div.col-sm-9 div {
+      height: 250px;
+      font-size: 50px;
+  }
+  #section1 {color: #fff; background-color: #1E88E5;}
+  #section2 {color: #fff; background-color: #673ab7;}
+  #section3 {color: #fff; background-color: #ff9800;}
+  #section41 {color: #fff; background-color: #00bcd4;}
+  #section42 {color: #fff; background-color: #009688;}
+  
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+        margin-left: 150px;
+    }
+  }
+/* Scrollspy starts*/
 /* Div slider section */
 .col-centered {
     float: none;
@@ -41,17 +74,18 @@
 .carousel-control { 
     width: 8%;
     width: 0px;
+    box-shadow:5px 5px 5px #888; 
 }
 .carousel-control.left,
 .carousel-control.right { 
-    margin-right: 40px;
-    margin-left: 32px; 
+    margin-right: 10px;
+    margin-left: 10px; 
     background-image: none;
     opacity: 1;
 }
 .carousel-control > a > span {
     color: white;
-    font-size: 29px !important;
+    font-size: 29px;
 }
 
 .carousel-col { 
@@ -108,7 +142,7 @@
 }
 
 .block {
-  width: 400px;
+  width: 700px;
   height: 400px;
 }
 
@@ -118,7 +152,10 @@
 
 .green {background: green;}
 
-.yellow {background: yellow;}
+.yellow {
+  background: yellow;
+
+}
 /* div slider ends */
 /* Footer */
 footer {
@@ -126,7 +163,7 @@ footer {
   background: #333;
   color: #fff;
   padding-top: 40px;
-  
+
 }
 /* Footer */
 
@@ -134,27 +171,27 @@ footer {
 <body>
 	<!-- Header -->
 	<header>
-	<div class="container" >
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-header">
-          <a href="" class="navbar-brand">Logo</a>
+    <nav class="navbar navbar-default navbar-fixed-top" id="global-nav">
+        <div class="navbar-header">  
+          <a href="" class="navbar-brand site-title">Logo</a>
         </div>
   			<form class="form-inline">
     		<input class="form-control mr-sm-2" type="text" placeholder="Search">
-    		<button class="btn btn-outline-warning my-2 my-sm-0" type="submit"><span class="glyphicon glyphicon-search"></span>   Search</button>
+    		<button class="btn btn-outline-warning my-2 my-sm-0" style="border: 2px solid #4CAF50;" type="submit"><span class="glyphicon glyphicon-search"> 
+        </span>   Search</button>
   			</form>
 	</nav>
-    </div>
+    
 
-      <div class="jumbotron">
-        <div class="container" style=" height:100px;padding:2px">
+      <div class="jumbotron" style="box-shadow:10px 10px 5px #888;">
+        <div class="container" style=" height:100px;padding:2px;">
           <h1 style="text">The Farming Company</h1>
           <h3>Creating history since 2016...</h3>
         </div> 
       </div> 
   </header>
 	<!-- Header ends -->
-	<!-- Slider Starts -->
+	<!-- Slider 2 Starts -->
 	<div id="slideshow">
    <div>
      <img src="image/image_1.jpg" style="height:430px;width:1480px">
@@ -167,7 +204,7 @@ footer {
    </div>
 </div>
 	<!-- Slider ends-->
-  <!-- Section-->
+  <!-- Section div slider-->
   <section >
         <div class="container">
       <div class="row">
@@ -214,10 +251,75 @@ footer {
         </div>
       </div>
     </div>
-
-
   </section>
-  <!-- section ends -->
+  <!-- section 2 div slider ends -->
+  <!-- section 3 Scroll Spy -->
+  <div data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1" style="font-width:50px">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section41">Section 4-1</a></li>
+            <li><a href="#section42">Section 4-2</a></li>                     
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <div id="section1">    
+        <h1>Section 1</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="section2"> 
+        <h1>Section 2</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>        
+      <div id="section3">         
+        <h1>Section 3</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="section41">         
+        <h1>Section 4-1</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>      
+      <div id="section42">         
+        <h1>Section 4-2</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+  <!-- Scroll spy eends -->
+  <!-- section 4 starts -->
+  <section class="cd-section " style="box-sizing:border-box;">
+    <p style="color:dimgray;">
+      <b style="font-size:36px;color:black;">
+        "No Compromise"
+        <br>
+      </b>
+      “We believe that compromising is never a good idea. So, we have various ranges of products which you may choose. Didn’t find your choice, No problem- please fill up this form and we will get back to you shortly.”
+      <br>
+      <br>
+      <a href="">
+        <button class="w3-btn w3-brown w3-padding-large">Contact Us</button>
+      </a>
+      <a href="">
+        <button class="w3-btn w3-brown w3-padding-large">Contact Us</button>
+      </a>
+  </section>
+  <!-- Section 4 ends -->
 
   <!-- footer starts-->
   <footer class="footer">
@@ -233,6 +335,23 @@ footer {
   <!-- footer ends-->
 
 <script type="text/javascript">
+//Navbar animation
+$(document).ready(function(){
+  var scrollTop = 0;
+  $(window).scroll(function(){
+    scrollTop = $(window).scrollTop();
+     $('.counter').html(scrollTop);
+    
+    if (scrollTop >= 100) {
+      $('#global-nav').addClass('scrolled-nav');
+    } else if (scrollTop < 100) {
+      $('#global-nav').removeClass('scrolled-nav');
+    } 
+    
+  }); 
+  
+});
+//Navbar animation ends
 
 //Fading animation starts
 $("#slideshow > div:gt(0)").hide();
