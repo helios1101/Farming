@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+  <title>Farming Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"/>
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <script scr="js\bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+/* Slider Starts */
+#slideshow { 
+    margin: 20px auto; 
+    position: relative; 
+    width: 1500px; 
+    height: 450px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+/*Slider ends */
+/* Div slider section */
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.carousel-control { 
+    width: 8%;
+    width: 0px;
+}
+.carousel-control.left,
+.carousel-control.right { 
+    margin-right: 40px;
+    margin-left: 32px; 
+    background-image: none;
+    opacity: 1;
+}
+.carousel-control > a > span {
+    color: white;
+    font-size: 29px !important;
+}
+
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
+ }
+
+ .active > div { display:none; }
+ .active > div:first-child { display:block; }
+
+/*xs*/
+@media (max-width: 767px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+  .carousel-inner .next        { left:  50%; }
+  .carousel-inner .prev        { left: -50%; }
+  .carousel-col                { width: 50%; }
+  .active > div:first-child + div { display:block; }
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+  .carousel-inner .next        { left:  50%; }
+  .carousel-inner .prev        { left: -50%; }
+  .carousel-col                { width: 50%; }
+  .active > div:first-child + div { display:block; }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-inner .active.left { left: -33%; }
+  .carousel-inner .active.right { left: 33%; }
+  .carousel-inner .next        { left:  33%; }
+  .carousel-inner .prev        { left: -33%; }
+  .carousel-col                { width: 33%; }
+  .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+  .carousel-inner .active.left { left: -25%; }
+  .carousel-inner .active.right{ left:  25%; }
+  .carousel-inner .next        { left:  25%; }
+  .carousel-inner .prev        { left: -25%; }
+  .carousel-col                { width: 25%; }
+  .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+  .active > div:first-child + div + div + div { display:block; }
+}
+
+.block {
+  width: 400px;
+  height: 400px;
+}
+
+.red {background: red;}
+
+.blue {background: blue;}
+
+.green {background: green;}
+
+.yellow {background: yellow;}
+/* div slider ends */
+/* Footer */
+footer {
+  height: 100px;
+  background: #333;
+  color: #fff;
+  padding-top: 40px;
+  
+}
+/* Footer */
+
+</style>
+<body>
+	<!-- Header -->
+	<header>
+	<div class="container" >
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+          <a href="" class="navbar-brand">Logo</a>
+        </div>
+  			<form class="form-inline">
+    		<input class="form-control mr-sm-2" type="text" placeholder="Search">
+    		<button class="btn btn-outline-warning my-2 my-sm-0" type="submit"><span class="glyphicon glyphicon-search"></span>   Search</button>
+  			</form>
+	</nav>
+    </div>
+
+      <div class="jumbotron">
+        <div class="container" style=" height:100px;padding:2px">
+          <h1 style="text">The Farming Company</h1>
+          <h3>Creating history since 2016...</h3>
+        </div> 
+      </div> 
+  </header>
+	<!-- Header ends -->
+	<!-- Slider Starts -->
+	<div id="slideshow">
+   <div>
+     <img src="image/image_1.jpg" style="height:430px;width:1480px">
+   </div>
+   <div>
+     <img src="image/image_1.jpg" style="height:430px;width:1480px">
+   </div>
+   <div>
+     <img src="image/image_1.jpg" style="height:430px;width:1480px">
+   </div>
+</div>
+	<!-- Slider ends-->
+  <!-- Section-->
+  <section >
+        <div class="container">
+      <div class="row">
+        <div class="col-xs-11 col-md-10 col-centered">
+
+          <div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="carousel-col">
+                  <div class="block red img-responsive"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-col">
+                  <div class="block green img-responsive"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-col">
+                  <div class="block blue img-responsive"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-col">
+                  <div class="block yellow img-responsive"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="left carousel-control">
+              <a href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </div>
+            <div class="right carousel-control">
+              <a href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- section ends -->
+
+  <!-- footer starts-->
+  <footer class="footer">
+    <div class="w3-padding-large" style="text-align: center">&copy;2017 The Farming Company &nbsp;&nbsp; | &nbsp;&nbsp; All rights reserved <br></div>
+        <div style="text-align: center"> 112@farmingcompany.co.in &nbsp;&nbsp;&nbsp; || &nbsp;&nbsp; &#43;91 (877) 095 7243 
+        </div>
+        <div class="w3-padding-large" style="text-align: center">
+            <a href="#" class=" w3-bar-item fa fa-twitter w3-xlarge"><span class="label"></span></a>&nbsp;&nbsp;&nbsp;&nbsp; 
+            <a href="https://www.facebook.com/TheFarmingCompany/" class="w3-bar-item fa fa-facebook w3-xlarge"><span class="label"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;  
+            <a href="https://www.linkedin.com/company/13454844" class="w3-bar-item fa fa-linkedin w3-xlarge"><span class="label"></span></a>
+        </div>
+  </footer>
+  <!-- footer ends-->
+
+<script type="text/javascript">
+
+//Fading animation starts
+$("#slideshow > div:gt(0)").hide();
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(500)
+    .next()
+    .fadeIn(500)
+    .end()
+    .appendTo('#slideshow');
+},  4000);
+// Fading animation ends
+
+// Div Slider Starts 
+$('.carousel[data-type="multi"] .item').each(function() {
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  for (var i = 0; i < 2; i++) {
+    next = next.next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
+// Div Slider Ends
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+</html>
