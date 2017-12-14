@@ -11,15 +11,32 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 <style>
+/* Nav bar effect starts */
+#global-nav{
+  height:60px;
+  width:100%; 
+}
+.scrolled-nav{
+  box-shadow:5px 5px 5px #888;
+  border-bottom:dotted; 
+  height:30px;
+  width:100%;
+}
+/* Nav bar effects ends */
 /* Slider Starts */
 #slideshow { 
-    margin: 50px auto; 
+    margin: 20px auto; 
     position: relative; 
-    width: 240px; 
-    height: 240px; 
+    width: 1500px; 
+    height: 450px; 
     padding: 10px; 
     box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 }
@@ -32,55 +49,725 @@
     bottom: 10px; 
 }
 /*Slider ends */
+/* flex box */
+.headero > h3 {
+  margin-left: 200px;
+}
+.w3lmask{
+  margin-top: -300px;
+  margin-left: -300px;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  height:1000px;
+  width:1000px;
+  padding: 100px;
+}
+.reg{
+  margin-top: 70px;
+  margin-left: 200px;
+  padding: 40px;
+  box-shadow:5px 5px 5px #888;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.flex-container>div {
+  background-color: #f1f1f1;
+  height: 100px;
+  width: 700px;
+  margin: 100px;
+  padding: 250px;
+ /* line-height: 100px;*/
+  font-size: 30px;
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 1px 7px 7px 7px #888;
+}
+/*
+.flexfooter1,.flexfooter2 {
+  height: 60px;
+  width: 100%;
+  margin-left: -5px;
+  margin-right: -20px;
+  margin-top: 70px;
+  margin-bottom: -70px;
+  padding: 10px;
+  text-align: center;
+  font-size: 100px;
+  font-family: cursive;
+}*/
+/*#flex1button{
+  margin-left: 150px;
+  margin-top: 70px;
+  margin-bottom: -70px;
+  padding: 10px;
+  width: 100px;
+  font-family: cursive;
+}
+#flex2button{
+  margin-left: 120px;
+  margin-top: 70px;
+  margin-bottom: -70px;
+  padding: 15px;
+  width: 150px;
+  font-family: cursive;
+  text-indent: 2px;
+}*/
+.block1{
+  display: hidden;
+  border: 5px solid red;
+}
+
+#flex1{
+  background: url("image/rice.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+ /* max-width: 100%;
+  max-height: 100vh;*/
+  display:block;
+  transition:all 1s ease;
+}
+
+/*#flex1:hover{
+  background:url("image/redblock.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*max-width: 100%;
+  max-height: 100vh;*/
+  /*display:block;*/
+/*}*/
+#flex2{
+  background: url("image/wheat.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  max-width: 100%;
+  max-height: 100vh;*/
+  transition:all 1s ease;
+  display:block;
+}
+#flex2:hover{
+  background:url("image/redblock.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  max-width: 100%;
+  max-height: 100vh;*/
+  display:block;
+}
+/*flex box ends */
+/* Scrollspy starts*/
+ul.nav-pills {
+      top: 100px;
+      position: relative;
+  }
+  div.col-sm-9 div {
+      height: 250px;
+      font-size: 50px;
+  }
+  #section1 {color: #fff; background-color: #1E88E5;}
+  #section2 {color: #fff; background-color: #673ab7;}
+  #section3 {color: #fff; background-color: #ff9800;}
+  #section41 {color: #fff; background-color: #00bcd4;}
+  #section42 {color: #fff; background-color: #009688;}
+  
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+        margin-left: 150px;
+    }
+  }
+/* Scrollspy ends*/
+
+/* test starts */
+#test{
+    width: 1485px;
+    border: 1px solid green;
+    padding: 100px;
+    margin: 15px;
+}
+#test1{
+    width: 700px;
+    border: 1px solid green;
+    outline-style: double;
+    padding: 25px;
+    margin: 25px;
+}
+#test2{
+  width: 700px;
+    border: 15px solid green;
+    outline-style: dashed;
+    padding: 25px;
+    margin: 25px;
+}
+#test3{
+    width: 700px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+.portfolio-wrap-2{
+  padding:5px;
+  border-radius: 4px;
+  background: #FFF;
+  margin: 0 0 5px 0;
+}
+/* test ends */
+
+/* Div slider section */
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.carousel-control { 
+    width: 8%;
+    width: 0px;
+    box-shadow:5px 5px 5px #888; 
+}
+.carousel-control.left,
+.carousel-control.right { 
+    margin-right: 10px;
+    margin-left: 10px; 
+    background-image: none;
+    opacity: 1;
+}
+.carousel-control > a > span {
+    color: white;
+    font-size: 29px;
+}
+
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
+ }
+
+ .active > div { display:none; }
+ .active > div:first-child { display:block; }
+
+/*xs*/
+@media (max-width: 767px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+  .carousel-inner .next        { left:  50%; }
+  .carousel-inner .prev        { left: -50%; }
+  .carousel-col                { width: 50%; }
+  .active > div:first-child + div { display:block; }
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner .active.left { left: -50%; }
+  .carousel-inner .active.right { left: 50%; }
+  .carousel-inner .next        { left:  50%; }
+  .carousel-inner .prev        { left: -50%; }
+  .carousel-col                { width: 50%; }
+  .active > div:first-child + div { display:block; }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-inner .active.left { left: -33%; }
+  .carousel-inner .active.right { left: 33%; }
+  .carousel-inner .next        { left:  33%; }
+  .carousel-inner .prev        { left: -33%; }
+  .carousel-col                { width: 33%; }
+  .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+  .carousel-inner .active.left { left: -25%; }
+  .carousel-inner .active.right{ left:  25%; }
+  .carousel-inner .next        { left:  25%; }
+  .carousel-inner .prev        { left: -25%; }
+  .carousel-col                { width: 25%; }
+  .active > div:first-child + div { display:block; }
+  .active > div:first-child + div + div { display:block; }
+  .active > div:first-child + div + div + div { display:block; }
+}
+
+.block {
+  width: 700px;
+  height: 400px;
+}
+
+.red {background: red;}
+
+.blue {background: blue;}
+
+.green {background: green;}
+
+.yellow {
+  background: yellow;
+
+}
+/* div slider ends */
+/* Footer */
+footer {
+  height: 100px;
+  background: #333;
+  color: #fff;
+  padding-top: 40px;
+
+}
+/* Footer */
 
 </style>
 <body>
 	<!-- Header -->
 	<header>
-	<div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top ">
-        <div class="navbar-header">
-          <a href="" class="navbar-brand">Logo</a>
+    <nav class="navbar navbar-default navbar-fixed-top" id="global-nav">
+        <div class="navbar-header">  
+          <a href="" class="navbar-brand site-title">Logo</a>
         </div>
   			<form class="form-inline">
     		<input class="form-control mr-sm-2" type="text" placeholder="Search">
-    		<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="glyphicon glyphicon-search"></span>   Search</button>
+    		<button class="btn btn-outline-warning my-2 my-sm-0" style="border: 2px solid #4CAF50;" type="submit"><span class="glyphicon glyphicon-search"> 
+        </span>   Search</button>
   			</form>
 	</nav>
-    </div>
+    
 
-      <div class="jumbotron">
-        <div class="container" style="margin:-5px padding:2px">
+      <div class="jumbotron" style="box-shadow:10px 10px 5px #888;">
+        <div class="container" style=" height:100px;padding:2px;">
           <h1 style="text">The Farming Company</h1>
           <h3>Creating history since 2016...</h3>
         </div> 
       </div> 
   </header>
 	<!-- Header ends -->
-	<!-- Slider Starts -->
+	<!-- Slider 2 Starts -->
 	<div id="slideshow">
    <div>
-     <img src="image/image_1.jpg" style="height:200px;width:400px">
+     <img src="image/image_1.jpg" style="height:430px;width:1480px">
    </div>
    <div>
-     <img src="image/image_1.jpg" style="height:200px;width:400px">
+     <img src="image/image_1.jpg" style="height:430px;width:1480px">
    </div>
    <div>
-     Pretty cool eh? This slide is proof the content can be anything.
+     <img src="image/image_1.jpg" style="height:430px;width:1480px">
    </div>
 </div>
 	<!-- Slider ends-->
-<script type="text/javascript">
+  <!-- Section div slider-->
+  <section >
+        <div class="container">
+      <div class="row">
+        <div class="col-xs-11 col-md-10 col-centered">
 
+          <div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="carousel-col">
+                  <div class="block red img-responsive"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-col">
+                  <div class="block green img-responsive"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-col">
+                  <div class="block blue img-responsive"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-col">
+                  <div class="block yellow img-responsive"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="left carousel-control">
+              <a href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </div>
+            <div class="right carousel-control">
+              <a href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section 2 div slider ends -->
+
+
+
+  <!-- Flex section 2 a starts-->
+
+
+<div class="flex-container" id="flex">
+  <div id="flex1" class="flex1bgimg w3-agile-view">
+    <div class="w3lmask">
+      <header class="headero">
+              <h3>RICE</h3>
+              <div class="social">
+                <button class="reg">Pre-Register</button></a>
+              </div>
+            </header>
+          </div>
+  <!-- <div class="flexfooter1">
+    <button id="flex1button" class="btn btn-primary"><h2>RICE</h2></button>
+  </div> -->
+  </div>
+  <!-- <div class="block1">
+    <a href="#">Preregister</a> 
+  </div> -->
+  <div id="flex2" class="flex2bgimg">
+  <!-- <div class="flexfooter2">
+    <button id="flex2button" class="btn btn-primary"><h2>WHEAT</h2></button>
+  </div> -->
+  </div>
+</div>
+  <!-- flex section 2 a ends -->
+
+  <!-- Events wale effects -->
+  <div class="team" id="team">
+    <div class="container">
+      <!-- <div class="w3l-heading about-heading">
+        <h3>EVENTS</h3>
+      </div> -->
+      <div class="agile_team_grids">
+        <!--<a href="#" class="close" style="margin-right: 30px;margin-top: 30px;"></a>-->
+        <div class="col-md-3 agile_team_grid">
+          <div class="view w3-agile-view">
+            <img src="image/t1.jpg" alt=" " class="img-responsive" />
+            <div class="w3lmask">
+              <h5>SAPTAK</h5>
+              <p>A contest between bands with musical performances from eastern genre.</p>
+              <div class="social">
+                <button class="reg">Register1</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 agile_team_grid">
+          <div class="view w3-agile-view">
+            <img src="image/t2.jpg" alt=" " class="img-responsive" />
+            <div class="w3lmask">
+              <h5>SAPTAK</h5>
+              <p>A contest between bands with musical performances from eastern genre.</p>
+              <div class="social">
+                <a href="#"><button class="reg">Register</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 agile_team_grid">
+          <div class="view w3-agile-view">
+            <img src="image/t3.jpg" alt=" " class="img-responsive" />
+            <div class="w3lmask">
+              <h5>SAPTAK</h5>
+              <p>A contest between bands with musical performances from eastern genre.</p>
+              <div class="social">
+                <a href="#item01"><button class="regi">Description</button></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#"><button class="reg">Register</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 agile_team_grid">
+          <div class="view w3-agile-view">
+            <img src="image/t4.jpg" alt=" " class="img-responsive" />
+            <div class="w3lmask">
+              <h5>SAPTAK</h5>
+              <p>A contest between bands with musical performances from eastern genre.</p>
+              <div class="social">
+                <a href="#item01"><button class="regi">Description</button></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#"><button class="reg">Register</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="height: 40px"></div>
+        <div class="col-md-3 agile_team_grid">
+          <div class="view w3-agile-view">
+            <img src="image/t1.jpg" alt=" " class="img-responsive" />
+            <div class="w3lmask">
+              <h5>SAPTAK</h5>
+              <p>A contest between bands with musical performances from eastern genre.</p>
+              <div class="social">
+                <a href="#item01"><button class="regi">Description</button></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#"><button class="reg">Register</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 agile_team_grid">
+          <div class="view w3-agile-view">
+            <img src="image/t2.jpg" alt=" " class="img-responsive" />
+            <div class="w3lmask">
+              <h5>SAPTAK</h5>
+              <p>A contest between bands with musical performances from eastern genre.</p>
+              <div class="social">
+                <a href="#item01"><button class="regi">Description</button></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#"><button class="reg">Register</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 agile_team_grid">
+          <div class="view w3-agile-view">
+            <img src="image/t3.jpg" alt=" " class="img-responsive" />
+            <div class="w3lmask">
+              <h5>SAPTAK</h5>
+              <p>A contest between bands with musical performances from eastern genre.</p>
+              <div class="social">
+                <a href="#item01"><button class="regi">Description</button></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#"><button class="reg">Register</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 agile_team_grid">
+          <div class="view w3-agile-view">
+            <img src="image/t4.jpg" alt=" " class="img-responsive" />
+            <div class="w3lmask">
+              <h5>SAPTAK</h5>
+              <p>A contest between bands with musical performances from eastern genre.</p>
+              <div class="social">
+                <a href="#item01"><button class="regi">Description</button></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#"><button class="reg">Register</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Events wale efects ends -->
+
+
+  <!-- section 3 Scroll Spy -->
+  <div data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1" style="font-width:50px">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section41">Section 4-1</a></li>
+            <li><a href="#section42">Section 4-2</a></li>                     
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <div id="section1">    
+        <h1>Section 1</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="section2"> 
+        <h1>Section 2</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>        
+      <div id="section3">         
+        <h1>Section 3</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="section41">         
+        <h1>Section 4-1</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>      
+      <div id="section42">         
+        <h1>Section 4-2</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Scroll spy ends -->
+
+  <!-- test section -->
+  <div id="test">
+
+
+  </div>
+  <div id="test1">
+
+
+  </div>
+  <div id="test2">
+
+
+  </div>
+  <div id="test3">
+
+
+  </div>
+  <div class="main">
+    <div id="cbp-vm" class="cbp-vm-switcher1 cbp-vm-view-grid">
+      <ul>
+        <div id="Panel2">
+          <!-- Li 1-->
+          <li>
+            <div class="portfolio-wrap-2">
+              <div class="cbp-vm-image">
+                <img id="Repeater2_Image1_0" src="image/image_1.jpg" style="height:200px;width:100px;">
+              </div>
+              <h4 class="cbp-vm-price" style="text-transform:capiatalize">
+                <a id="Repeater2_HyperLink4_0" href="" >Tapioca</a>
+              </h4>
+              <div style="text-align:left;padding-left:5px;padding-bottom:5px;">
+                <strong>Location:</strong>
+                "Kerala.Kotamangalam"
+              </div>
+            </div>
+          </li>
+          <!-- Li 2-->
+          <li>
+            <div class="portfolio-wrap-2">
+              <div class="cbp-vm-image">
+                <img id="Repeater2_Image1_0" src="image/image_1.jpg" style="height:200px;width:100px;">
+              </div>
+              <h4 class="cbp-vm-price" style="text-transform:capiatalize">
+                <a id="Repeater2_HyperLink4_0" href="" >Tapioca</a>
+              </h4>
+              <div style="text-align:left;padding-left:5px;padding-bottom:5px;">
+                <strong>Location:</strong>
+                "Kerala.Kotamangalam"
+              </div>
+            </div>
+          </li>
+          <!-- Li 3-->
+          <li>
+            <div class="portfolio-wrap-2">
+              <div class="cbp-vm-image">
+                <img id="Repeater2_Image1_0" src="image/image_1.jpg" style="height:200px;width:100px;">
+              </div>
+              <h4 class="cbp-vm-price" style="text-transform:capiatalize">
+                <a id="Repeater2_HyperLink4_0" href="" >Tapioca</a>
+              </h4>
+              <div style="text-align:left;padding-left:5px;padding-bottom:5px;">
+                <strong>Location:</strong>
+                "Kerala.Kotamangalam"
+              </div>
+            </div>
+          </li>
+
+        </div>
+      </ul>
+     </div> 
+  </div>      
+  <!-- test section ends-->
+  <!-- section 4 starts -->
+  <section class="cd-section " style="box-sizing:border-box;">
+    <p style="color:dimgray;">
+      <b style="font-size:36px;color:black;">
+        "No Compromise"
+        <br>
+      </b>
+      “We believe that compromising is never a good idea. So, we have various ranges of products which you may choose. Didn’t find your choice, No problem- please fill up this form and we will get back to you shortly.”
+      <br>
+      <br>
+      <a href="">
+        <button class="w3-btn w3-brown w3-padding-large">Contact Us</button>
+      </a>
+      <a href="">
+        <button class="w3-btn w3-brown w3-padding-large">Contact Us</button>
+      </a>
+  </section>
+  <!-- Section 4 ends -->
+
+  <!-- footer starts-->
+  <footer class="footer">
+    <div class="w3-padding-large" style="text-align: center">&copy;2017 The Farming Company &nbsp;&nbsp; | &nbsp;&nbsp; All rights reserved <br></div>
+        <div style="text-align: center"> 112@farmingcompany.co.in &nbsp;&nbsp;&nbsp; || &nbsp;&nbsp; &#43;91 (877) 095 7243 
+        </div>
+        <div class="w3-padding-large" style="text-align: center">
+            <a href="#" class=" w3-bar-item fa fa-twitter w3-xlarge"><span class="label"></span></a>&nbsp;&nbsp;&nbsp;&nbsp; 
+            <a href="https://www.facebook.com/TheFarmingCompany/" class="w3-bar-item fa fa-facebook w3-xlarge"><span class="label"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;  
+            <a href="https://www.linkedin.com/company/13454844" class="w3-bar-item fa fa-linkedin w3-xlarge"><span class="label"></span></a>
+        </div>
+  </footer>
+  <!-- footer ends-->
+
+<script type="text/javascript">
+//Navbar animation
+$(document).ready(function(){
+  var scrollTop = 0;
+  $(window).scroll(function(){
+    scrollTop = $(window).scrollTop();
+     $('.counter').html(scrollTop);
+    
+    if (scrollTop >= 130) {
+      $('#global-nav').addClass('scrolled-nav');
+    } else if (scrollTop < 130) {
+      $('#global-nav').removeClass('scrolled-nav');
+    } 
+    
+  }); 
+  
+});
+//Navbar animation ends
+
+//Fading animation starts
 $("#slideshow > div:gt(0)").hide();
 setInterval(function() { 
   $('#slideshow > div:first')
-    .fadeOut(1000)
+    .fadeOut(500)
     .next()
-    .fadeIn(1000)
+    .fadeIn(500)
     .end()
     .appendTo('#slideshow');
-},  3000);
+},  4000);
+// Fading animation ends
+
+// Div Slider Starts 
+$('.carousel[data-type="multi"] .item').each(function() {
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  for (var i = 0; i < 2; i++) {
+    next = next.next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
+// Div Slider Ends
+// Flex animation starts
+// $("#flex1").hover(function(){
+//   $("#flex2").hide();
+// },function(){
+//   $("#flex2").show();
+// });
+// $("#flex2").hover(function(){
+//   $("#flex1").hide();
+// },function(){
+//   $("#flex1").show();
+// });
+
+// Flex animation ends
 
 </script>
 
