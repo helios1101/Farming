@@ -11,12 +11,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
-    <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- //font-awesome icons -->
-<link rel="stylesheet" href="css/style.css">
 
 </head>
 <style>
@@ -51,114 +45,26 @@
 }
 /*Slider ends */
 /* flex box */
-.headero > h3 {
-  margin-left: 170px;
-  margin-top: 200ps;
-  font-size: 100px;
-  font-family: aerial;
-}
-.w3lmask{
-  margin-top: -300px;
-  margin-left: -300px;
-  margin-right: 1px;
-  margin-bottom: 1px;
-  height:1000px;
-  width:1000px;
-  padding: 100px;
-}
-.reg{
-  margin-top: 130px;
-  margin-left: 190px;
-  padding: 20px;
-  box-shadow:5px 5px 5px #888;
-}
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
+  /*background-color: DodgerBlue;*/
 }
+
 .flex-container>div {
   background-color: #f1f1f1;
-  height: 100px;
-  width: 700px;
-  margin: 100px;
-  padding: 250px;
- /* line-height: 100px;*/
+  width: 800px;
+  margin: 50px;
+  padding: 100px;
+  text-align: justify;
+  text-align-last:end;
+  line-height: 100px;
   font-size: 30px;
-  border-radius: 100%;
-  overflow: hidden;
-  box-shadow: 1px 7px 7px 7px #888;
 }
-/*
-.flexfooter1,.flexfooter2 {
-  height: 60px;
-  width: 100%;
-  margin-left: -5px;
-  margin-right: -20px;
-  margin-top: 70px;
-  margin-bottom: -70px;
-  padding: 10px;
-  text-align: center;
-  font-size: 100px;
-  font-family: cursive;
-}*/
-/*#flex1button{
-  margin-left: 150px;
-  margin-top: 70px;
-  margin-bottom: -70px;
-  padding: 10px;
-  width: 100px;
-  font-family: cursive;
-}
-#flex2button{
-  margin-left: 120px;
-  margin-top: 70px;
-  margin-bottom: -70px;
-  padding: 15px;
-  width: 150px;
-  font-family: cursive;
-  text-indent: 2px;
-}*/
-.block1{
-  display: hidden;
-  border: 5px solid red;
-}
+#flex1:hover{
+  
 
-#flex1{
-  background: url("image/rice.jpg"); 
-  background-size: cover;
-  background-repeat: no-repeat;
- /* max-width: 100%;
-  max-height: 100vh;*/
-  display:block;
-  transition:all 1s ease;
 }
-
-#flex1:hover,#flex2:hover{
-  /*background:url("image/redblock.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;*/
-  border-radius: 20%;
-  /*max-width: 100%;
-  max-height: 100vh;
-  /*display:block;*/
-}
-#flex2{
-  background: url("image/wheat.jpg"); 
-  background-repeat: no-repeat;
-  background-size: cover;
-/*  max-width: 100%;
-  max-height: 100vh;*/
-  transition:all 1s ease;
-  display:block;
-}
-/*#flex2:hover{
-  background:url("image/redblock.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;*/
-/*  max-width: 100%;
-  max-height: 100vh;*/
-  /*display:block;
-}*/
 /*flex box ends */
 /* Scrollspy starts*/
 ul.nav-pills {
@@ -309,30 +215,13 @@ ul.nav-pills {
 
 }
 /* div slider ends */
-/* section 4*/
-.cd-section{
-  text-align: center;
-  background-color: #FBEEC1;
-  height: 300px;
-  width:100%;
-  font-size: 30px;
-  font-family: sans-serif;
-}
-.cd-section > p{
-  text-indent: 2px;
-  margin-top: 10px;
-}
-.w3-btn{
-
-}
-/* section 4 ends */
 /* Footer */
-.footer {
+footer {
   height: 100px;
   background: #333;
   color: #fff;
   padding-top: 40px;
-  display: block;
+
 }
 /* Footer */
 
@@ -342,7 +231,7 @@ ul.nav-pills {
 	<header>
     <nav class="navbar navbar-default navbar-fixed-top" id="global-nav">
         <div class="navbar-header">  
-          <a href="#" class="navbar-brand site-title">Logo</a>
+          <a href="" class="navbar-brand site-title">Logo</a>
         </div>
   			<form class="form-inline">
     		<input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -353,7 +242,7 @@ ul.nav-pills {
     
 
       <div class="jumbotron" style="box-shadow:10px 10px 5px #888;">
-        <div class="container" style=" height:100px;padding:5px;margin-top:30px;margin-bottom:-15px;">
+        <div class="container" style=" height:100px;padding:2px;">
           <h1 style="text">The Farming Company</h1>
           <h3>Creating history since 2016...</h3>
         </div> 
@@ -423,43 +312,13 @@ ul.nav-pills {
   </section>
   <!-- section 2 div slider ends -->
 
-
-
   <!-- Flex section 2 a starts-->
-
-
-<div class="flex-container" id="flex">
-  <div id="flex1" class="flex1bgimg w3-agile-view">
-    <div class="w3lmask">
-      <header class="headero">
-        <h3>RICE</h3>
-       <div class="social">
-         <button class="reg">Pre-Register</button></a>
-        </div>
-      </header>
-    </div>
-  <!-- <div class="flexfooter1">
-    <button id="flex1button" class="btn btn-primary"><h2>RICE</h2></button>
-  </div> -->
-  </div>
-  <!-- <div class="block1">
-    <a href="#">Preregister</a> 
-  </div> -->
-  <div id="flex2" class="flex2bgimg w3-agile-view">
-    <div class="w3lmask">
-      <header class="headero">
-        <h3 style="margin-left: 120px;">WHEAT</h3>
-       <div class="social">
-         <button class="reg">Pre-Register</button></a>
-        </div>
-      </header>
-    </div>
-  <!-- <div class="flexfooter2">
-    <button id="flex2button" class="btn btn-primary"><h2>WHEAT</h2></button>
-  </div> -->
-  </div>
+<div class="flex-container">
+  <div id="flex1">Rice</div>
+  <div id="flex2">Wheat</div>
 </div>
   <!-- flex section 2 a ends -->
+
 
   <!-- section 3 Scroll Spy -->
   <div data-spy="scroll" data-target="#myScrollspy" data-offset="20">
@@ -581,18 +440,17 @@ ul.nav-pills {
   </div>      
   <!-- test section ends-->
   <!-- section 4 starts -->
-  <section class="cd-section" style="box-sizing:border-box;">
-    <p>
+  <section class="cd-section " style="box-sizing:border-box;">
+    <p style="color:dimgray;">
       <b style="font-size:36px;color:black;">
         "No Compromise"
         <br>
       </b>
       “We believe that compromising is never a good idea. So, we have various ranges of products which you may choose. Didn’t find your choice, No problem- please fill up this form and we will get back to you shortly.”
       <br>
-    </p>
       <br>
       <a href="">
-        <button class="w3-btn w3-brown w3-padding-large">Register</button>
+        <button class="w3-btn w3-brown w3-padding-large">Contact Us</button>
       </a>
       <a href="">
         <button class="w3-btn w3-brown w3-padding-large">Contact Us</button>
@@ -662,19 +520,6 @@ $('.carousel[data-type="multi"] .item').each(function() {
   }
 });
 // Div Slider Ends
-// Flex animation starts
-// $("#flex1").hover(function(){
-//   $("#flex2").hide();
-// },function(){
-//   $("#flex2").show();
-// });
-// $("#flex2").hover(function(){
-//   $("#flex1").hide();
-// },function(){
-//   $("#flex1").show();
-// });
-
-// Flex animation ends
 
 </script>
 
